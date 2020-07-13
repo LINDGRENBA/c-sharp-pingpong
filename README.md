@@ -33,14 +33,14 @@ Create an app that will replace numbers with ping, pong or ping-pong depending o
 | -------- | ----- | ------ | -------- |
 | 1. A user a number and the program will count out every number up to the user input | 15 | 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15 | Y |
 | 2. All numbers divisible by 3 will be replaced with "ping" | 5 | 1,2,"ping",4,5 | Y |
-| 3. All numbers divisible by 5 will be replaced with "pong" | 5 | 1,2,3,4,"pong" | N |
-| 4. All numbers divisible by 3 and 5 are replaced with "ping-pong" | 15 | 1,2,3,4,5,6,7,8,9,10,11,12,13,14,"ping-pong" | N |
+| 3. All numbers divisible by 5 will be replaced with "pong" | 5 | 1,2,3,4,"pong" | Y |
+| 4. All numbers divisible by 3 and 5 are replaced with "ping-pong" | 15 | 1,2,3,4,5,6,7,8,9,10,11,12,13,14,"ping-pong" | 4 |
 
 ## Known Bugs
 
-| Location (html/css/js & specific location if known) |  Message  | Bug | Resolved (Y/N) |  How was the issue resolved?  |
+| Bug | Resolved (Y/N) |  How was the issue resolved?  |
 | ------- | ----- | ------ | ------ | --------- |
-There are no known bugs at this time.
+| 15 is replaced with ping instead of pong | N | Placed condition for numbers divisible by 3 AND numbers divisible by 5 first in branching logic |
 
 
 ## Support and contact details

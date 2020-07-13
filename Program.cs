@@ -10,7 +10,11 @@ class PingPong
 
     for (int i = 1; i <= input; i++)
     {
-      if (i % 3 == 0) 
+      if (i % 5 == 0 && i % 3 ==0)
+      {
+        Console.WriteLine("Ping-Pong!");
+      }
+      else if (i % 3 == 0) 
       {
         Console.WriteLine("ping!");
       } 
