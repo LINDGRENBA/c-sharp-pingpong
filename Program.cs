@@ -1,31 +1,15 @@
 using System;
 
-class PingPong
+namespace PingPongNameSpace
 {
-  static void Main()
+  class PingPong
   {
-    Console.WriteLine("Enter a positive whole number:");
-    string stringUserInput = Console.ReadLine();
-    int input = int.Parse(stringUserInput);
-
-    for (int i = 1; i <= input; i++)
+    static void Main()
     {
-      if (i % 5 == 0 && i % 3 ==0)
-      {
-        Console.WriteLine("Ping-Pong!");
-      }
-      else if (i % 3 == 0) 
-      {
-        Console.WriteLine("ping!");
-      } 
-      else if (i % 5 == 0)
-      {
-        Console.WriteLine("pong!");
-      }
-      else 
-      {
-        Console.WriteLine(i);
-      }
+      Console.WriteLine("Enter a positive whole number:");
+      string stringUserInput = Console.ReadLine();
+      int input = int.Parse(stringUserInput);
+      Console.WriteLine(CheckUserNumber(input));
     }
   }
 }
