@@ -14,6 +14,10 @@ class PingPong
       {
         Console.WriteLine("ping!");
       } 
+      else if (i % 5 == 0)
+      {
+        Console.WriteLine("pong!");
+      }
       else 
       {
         Console.WriteLine(i);
